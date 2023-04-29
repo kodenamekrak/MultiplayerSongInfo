@@ -1,0 +1,29 @@
+<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='https://raw.githubusercontent.com/RedBrumbler/Quest-BSML-Docs/gh-pages/schema.xsd'>
+    <modal id="modal" size-delta-x="100.0" size-delta-y="60.0" anchor-pos-x="-5.0">
+        <vertical vertical-fit="PreferredSize" pref-height="56.0" horizontal-fit="PreferredSize" pref-width="96.0" spacing="1.0">
+            <horizontal vertical-fit="PreferredSize" pref-height="16.0" horizontal-fit="PreferredSize" pref-width="96.0" spacing="1.0">
+                <image id="songCoverImage" pref-height="16.0" pref-width="16.0" preserve-aspect="true"/>
+                <vertical horizontal-fit="PreferredSize" pref-width="45.0" vertical-fit="PreferredSize" pref-height="16.0" child-expand-height="false" child-expand-width="false" spacing="0.0" child-align="UpperLeft">
+                    <text id='songNameText' font-size="5.0"/>
+                    <text id='songAuthorText' font-size="4.0" align="Bottom" color="grey"/>
+                    <text id='songDurationText' font-size="4.0"/>
+                </vertical>
+                <vertical horizontal-fit="PreferredSize" pref-height="16.0" vertical-fit="PreferredSize" child-expand-height="false" pref-width="33.0">
+                    <text id='songRatingText' font-size="4.0" align="TopRight"/>
+                    <text id='uploadDateText' font-size="4.0" align="TopRight"/>
+                    <action-button text="Select" on-click="SelectButtonClick"/>
+                </vertical>
+            </horizontal>
+                <text-segments id='difficultyTextSegment' select-cell="DifficultySegmentClick" spacing="7.0"/>
+            <vertical vertical-fit="PreferredSize" pref-height="29.0" horizontal-fit="PreferredSize" child-align="LowerCenter" pad-top="8.0" pref-width="96.0">
+                <horizontal vertical-fit="PreferredSize" pref-height="5.0" horizontal-fit="PreferredSize" pref-width="96.0" spacing="3.0" child-expand-width="false" child-align="MiddleLeft">
+                    <text id='rankedStatusText'/>
+                    <text id='ppValueText'/>
+                    <text id='starValueText'/>
+                </horizontal>
+                <text id='notesPerSecondText'/>
+            </vertical>
+        </vertical>
+    </modal>
+</bg>
