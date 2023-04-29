@@ -1,7 +1,6 @@
 #pragma once
 
 #include "custom-types/shared/macros.hpp"
-#include "custom-types/shared/coroutine.hpp"
 #include "song-details/shared/Data/Song.hpp"
 
 #include "GlobalNamespace/PreviewDifficultyBeatmap.hpp"
